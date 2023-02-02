@@ -1,0 +1,17 @@
+.btn {
+  margin-top: 10px;
+  width: 70px;
+  height: 40px;
+  border: solid 2px gold;
+  border-radius: 4px;
+  color: gold;
+  background-color: rgb(43, 32, 53);
+  cursor: pointer;
+}
+
+.btn:not(:last-child) {
+  margin-right: 10px;
+}
+.title {
+  font-size: 20px;
+}
