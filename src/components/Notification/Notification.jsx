@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from './notification.module.css';
+import css from './notificatio.module.css';
 
 export default function Notification({ message }) {
   return <p className={css.pretitleMessage}>{message}</p>;
