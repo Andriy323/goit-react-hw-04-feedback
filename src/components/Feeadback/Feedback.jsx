@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from './Feadbak.module.css';
+import css from './feadback.module.css';
 
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
