@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from './sectio.module.css';
+import css from './section.module.css';
 const Section = ({ title, children }) => {
   return (
     <section className={css.section}>

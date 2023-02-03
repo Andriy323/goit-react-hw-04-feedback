@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import Statistics from 'components/Statistic/Statistic';
-import Section from 'components/Section/Section';
-import FeedbackOptions from 'components/Feeadback/Feedback';
+import Statistics from './Statistic/Statistic';
+import Section from './Section/Section';
+import FeedbackOptions from './Feeadback/Feedback';
 
 const App = () => {
   const [statistacs, setStatistacs] = useState({
