@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-import Notification from 'components/Notification/Notification';
-import css from 'components/Statistic/Statistic.module.css';
+import Notification from '../Notification/Notification';
+import css from './statistic.module.css';
 
 export default function Statistics({
   total,
