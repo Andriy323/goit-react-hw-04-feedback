@@ -4,18 +4,16 @@ import Section from './Section/Section';
 import FeedbackOptions from './Feeadback/Feedback';
 
 const App = () => {
-  const [statistacs, setStatistacs] = useState({
+  const [votes, setVotes] = useState({
     good: 0,
     neutral: 0,
     bad: 0,
   });
 
-  const { good, neutral, bad } = statistacs;
-
-  const nameBtn = ['good', 'neutral', 'bad'];
+  const { good, neutral, bad } = votes;
 
   const onLeaveFeedback = name => {
-    setStatistacs(prevState => {
+    setVotes(prevState => {
       return { ...prevState, [name]: prevState[name] + 1 };
     });
   };
@@ -33,7 +31,10 @@ const App = () => {
   return (
     <div>
       <Section title="Pleas leave feedback">
-        <FeedbackOptions options={nameBtn} onLeaveFeedback={onLeaveFeedback} />
+        <FeedbackOptions
+          options={Object.keys(votes)}
+          onLeaveFeedback={onLeaveFeedback}
+        />
       </Section>
 
       <Section title="Statistics">
